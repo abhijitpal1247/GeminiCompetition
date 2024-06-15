@@ -26,4 +26,4 @@ pipe.set_adapters(["tilt-up", "celebrity-lora"],
 output = pipe(prompt="th3r0ck smiling", guidance_scale=1.0, num_inference_steps=step, num_frames=24)
 export_to_video(output.frames[0], "animation.mp4")
 
-subprocess.run(["python", "inference_video.py", "--exp=1", "--video=animation.mp4", "--scale=0.5"])
+subprocess.run(["python", "ECCV2022-RIFE-main/inference_video.py", "--exp=1", "--video=animation.mp4", "--scale=0.5"])
