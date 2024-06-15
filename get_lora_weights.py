@@ -2,7 +2,8 @@ import os
 import wget
 
 
-os.makedirs("cola_weights")
+os.makedirs("cola_weights", exist_ok=True)
+os.makedirs("celebrity_weights", exist_ok=True)
 wget.download(url="https://civitai.com/api/download/models/267807?token=$CIVITAI_API_KEY",
               out="cola_weights/pytorch_lora.safetensors")
 
